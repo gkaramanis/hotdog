@@ -48,7 +48,8 @@ server <- function(input, output) {
             bun_front_shadow <- bun(x, -2.3, color = "#A27139")
             
             hotdog <- list(
-                geom_segment(aes(x = -x, xend = x, y = 0, yend = 0), size = 50, lineend = "round", color = "brown"),
+                geom_segment(aes(x = -x, xend = x, y = 0, yend = 0), size = 50, lineend = "round", color = "black"),
+                geom_segment(aes(x = -x, xend = x, y = 0.45, yend = 0.45), size = 40, lineend = "round", color = "brown"),
                 geom_function(fun = function(x) 0.7 * sin(2 * x),
                               xlim = c(-1.1 * x, 1.1 * x), n = 200,
                               position = position_nudge(y = 1.2),
