@@ -65,7 +65,6 @@ server <- function(input, output) {
         
         ggplot() +
             geom_hotdog() +
-            # coord_fixed(clip = "off") +
             theme_void() +
             theme(plot.background = element_rect(fill = "#7BE8E9", color = NA))
     })
